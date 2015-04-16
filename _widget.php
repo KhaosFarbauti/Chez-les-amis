@@ -21,21 +21,22 @@ class amisBehaviors
 {
         public static function initWidgets($widgets)
         {
-        $widgets->create('amis',__('Chez les amis'),array('tplamis','amisWidget'));
-        $widgets->amis->setting('title',__('Title:'),'');
-				$widgets->amis->setting('flux_uri',__('Flux:'),'');
-				$widgets->amis->setting('flux_uri2',__('Flux 2:'),'');
-				$widgets->amis->setting('flux_uri3',__('Flux 3:'),'');
-				$widgets->amis->setting('limit',__('Billets par flux:'),1);
-				$widgets->amis->setting('melange_uri',__('Melanger les billets'),0,'check');
-				$widgets->amis->setting('montre_date',__('Afficher la date des billets'),1,'check');
-		    $widgets->amis->setting('homeonly',__('Display on:'),0,'combo',
+        $widgets->create('amis',__('Among friends'),array('tplamis','amisWidget'),null,__('Display Friends RSS'));
+
+        $widgets->amis->setting('title',__('Title:'),__('Among friends'));
+	$widgets->amis->setting('flux_uri',__('RSS 1:'),'');
+	$widgets->amis->setting('flux_uri2',__('RSS 2:'),'');
+	$widgets->amis->setting('flux_uri3',__('RSS 3:'),'');
+	$widgets->amis->setting('limit',__('Entry per RSS:'),1);
+	$widgets->amis->setting('melange_uri',__('Randomize'),0,'check');
+	$widgets->amis->setting('montre_date',__('Display date'),1,'check');
+	$widgets->amis->setting('homeonly',__('Display on:'),0,'combo',
     			array(
     				__('All pages') => 0,
     				__('Home page only') => 1,
     				__('Except on home page') => 2
     				)
-    		);
+    	);
         $widgets->amis->setting('content_only',__('Content only'),0,'check');
         $widgets->amis->setting('class',__('CSS class:'),'');
         }

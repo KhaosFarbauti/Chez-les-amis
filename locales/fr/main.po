@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: brol <contact@brol.info>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+msgid "Among friends"
+msgstr "Chez les amis"
+
+msgid "Display Friends RSS"
+msgstr "Affichage des flux des amis"
+
+msgid "RSS 1:"
+msgstr "Flux 1 :"
+
+msgid "RSS 2:"
+msgstr "Flux 2 :"
+
+msgid "RSS 3:"
+msgstr "Flux 3 :"
+
+msgid "Entry per RSS:"
+msgstr "Billets par flux :"
+
+msgid "Randomize"
+msgstr "Mélanger les billets"
+
+msgid "Display date"
+msgstr "Afficher la date des billets"
