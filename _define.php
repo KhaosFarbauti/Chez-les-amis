@@ -16,10 +16,17 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
-        /* Name */                      "Chez les amis",
-        /* Description*/                "Affichage des flux des amis",
-        /* Author */                    "Khaos Farbauti Ibn Oblivion",
-        /* Version */                   '1.99',
-        /* Permissions */               'usage,contentadmin'
+        /* Name */		"Chez les amis",
+        /* Description*/	"Display Friends RSS",
+        /* Author */		"Khaos Farbauti Ibn Oblivion",
+        /* Version */		'1.100',
+	/* Properties */
+	array(
+		'permissions' => 'usage,contentadmin',
+		'type' => 'plugin',
+		'dc_min' => '2.7',
+		'support' => 'http://blog.chaosklub.com/index.php/post/2006/12/22/Chez-les-amis-V15',
+		'details' => 'http://plugins.dotaddict.org/dc2/details/amis'
+		)
 );
 ?>
