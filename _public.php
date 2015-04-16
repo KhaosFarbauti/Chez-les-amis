@@ -105,8 +105,7 @@ class tplamis
 		}
 		
 		// fin du melange ou tri
-		$res = ($w->content_only ? '' : '<div class="amis'.($w->class ? ' '.html::escapeHTML($w->class) : '').'">').
-		($w->title ? '<h2>'.html::escapeHTML($w->title).'</h2>' : '').
+		$res = ($w->title ? $w->renderTitle(html::escapeHTML($w->title)) : '').
 		'<ul>';
 		
 		for ($i = 0; $i < $nb; $i++ ){
@@ -116,10 +115,9 @@ class tplamis
 			$res .= '<li>'.($w->montre_date ? html::escapeHTML($adate[$i]).' ' : '').'<a href="'.html::escapeHTML($lien[$i]).'">'.$titre[$i].'</a></li>';
 		}
 		
-		$res .= '</ul>'.
-		($w->content_only ? '' : '</div>');
-		
-		return $res;
+		$res .= '</ul>';
+
+		return $w->renderDiv($w->content_only,'amis'.$w->class,'',$res);
 	}
 }
 ?>
