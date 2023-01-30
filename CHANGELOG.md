@@ -1,3 +1,8 @@
+Version 2.0 :
+- Mise à jour localisation
+- Mise à jour pour dc2.24
+- dc2.24 requis
+
 Version V1.100 :
 - Ajout localisation
 - Ajout mode hors-ligne

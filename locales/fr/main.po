@@ -1,35 +1,50 @@
+# Language: Français
+# Module: amis - 2.0-dev
+# Date: 2023-01-29 02:37:40
+# Author: Pierre Van Glabeke
+# Translated with translater 2022.12.26
+
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: amis 2.0-dev\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: brol <contact@brol.info>\n"
+"PO-Revision-Date: 2023-01-29T02:37:40+00:00\n"
+"Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: _widget.php:21
 msgid "Among friends"
 msgstr "Chez les amis"
 
+#: _widget.php:21
 msgid "Display Friends RSS"
 msgstr "Affichage des flux des amis"
 
+#: _widget.php:24
 msgid "RSS 1:"
 msgstr "Flux 1 :"
 
+#: _widget.php:25
 msgid "RSS 2:"
 msgstr "Flux 2 :"
 
+#: _widget.php:26
 msgid "RSS 3:"
 msgstr "Flux 3 :"
 
+#: _widget.php:27
 msgid "Entry per RSS:"
 msgstr "Billets par flux :"
 
+#: _widget.php:28
 msgid "Randomize"
 msgstr "Mélanger les billets"
 
+#: _widget.php:29
 msgid "Display date"
 msgstr "Afficher la date des billets"
+

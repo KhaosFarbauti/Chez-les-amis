@@ -1,33 +1,29 @@
 <?php
-#   Copyright 2015 Khaos Farbauti Ibn Oblivion
-#
-#   Licensed under the Apache License, Version 2.0 (the "License");
-#   you may not use this file except in compliance with the License.
-#   You may obtain a copy of the License at
-#
-#       http://www.apache.org/licenses/LICENSE-2.0
-#
-#   Unless required by applicable law or agreed to in writing, software
-#   distributed under the License is distributed on an "AS IS" BASIS,
-#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#   See the License for the specific language governing permissions and
-#   limitations under the License.
+/**
+ * @brief amis, a plugin for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Plugin
+ *
+ * @author Khaos Farbauti Ibn Oblivion, Pierre Van Glabeke and contributors
+ *
+ * @copyright Apache License-2.0 https://www.apache.org/licenses/LICENSE-2.0
+ */
 
 if (!defined('DC_RC_PATH')) { return; }
 
 require dirname(__FILE__).'/_widget.php';
+
 class tplamis
 {
 	# Widget function
 	public static function amisWidget($w){
-		
-		global $core;
 
 		if ($w->offline)
 			return;
 
-		if (($w->homeonly == 1 && $core->url->type != 'default') ||
-			($w->homeonly == 2 && $core->url->type == 'default')) {
+		if (($w->homeonly == 1 && dcCore::app()->url->type != 'default') ||
+			($w->homeonly == 2 && dcCore::app()->url->type == 'default')) {
 			return;
 		}
 		
@@ -117,7 +113,6 @@ class tplamis
 		
 		$res .= '</ul>';
 
-		return $w->renderDiv($w->content_only,'amis'.$w->class,'',$res);
+		return $w->renderDiv($w->content_only,'amis '.$w->class,'',$res);
 	}
 }
-?>
