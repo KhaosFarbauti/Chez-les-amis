@@ -15,7 +15,7 @@ $this->registerModule(
     'Among friends',
     'Display Friends RSS',
     'Khaos Farbauti Ibn Oblivion, Pierre Van Glabeke and contributors',
-    '2.0-dev',
+    '2.0',
     [
         'requires'    => [['core', '2.24']],
         'permissions' => dcCore::app()->auth->makePermissions([
